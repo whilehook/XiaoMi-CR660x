@@ -15,10 +15,10 @@
 #rm -rf package/lean/luci-theme-argon
 #git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/lean/luci-theme-infinityfreedom
 # 修改openwrt登陆地址,把下面的192.168.31.1修改成你想要的就可以了
-sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_generate
 
 # 修改主机名字，把YOU-R4A修改你喜欢的就行（不能纯数字或者使用中文）
-sed -i '/uci commit system/i\uci set system.@system[0].hostname='XXKDB'' package/lean/default-settings/files/zzz-default-settings
+#sed -i '/uci commit system/i\uci set system.@system[0].hostname='XXKDB'' package/lean/default-settings/files/zzz-default-settings
 
 # 版本号里显示一个自己的名字（ababwnq build $(TZ=UTC-8 date "+%Y.%m.%d") @ 这些都是后增加的）
 #sed -i "s/OpenWrt /ababwnq build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
@@ -36,9 +36,10 @@ rm -rf package/lean/luci-theme-netgear
 #下载主题luci-theme-argon
 #git clone https://github.com/YL2209/luci-theme-argon.git package/lean/luci-theme-argon
 #git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/lean/luci-theme-infinityfreedom
-git clone https://github.com/XXKDB/luci-theme-argon_armygreen.git package/lean/luci-theme-argon_armygreen
+#git clone https://github.com/XXKDB/luci-theme-argon_armygreen.git package/lean/luci-theme-argon_armygreen
 #git clone https://github.com/YL2209/luci-app-privoxy.git package/lean/luci-app-privoxy
 #git clone https://github.com/YL2209/luci-theme-ifit.git package/lean/luci-theme-ifit
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 
 # 修改luci-theme-argon_armygreen主题渐变色，16进制RGB
 #登录页面背景颜色+半透明
